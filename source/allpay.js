@@ -1381,6 +1381,9 @@ class Allpay {
       data.InvType = opts.InvType;
     }
 
+    /* Always include PaymentInfoURL regardless of ChoosePayment */
+    data.PaymentInfoURL = opts.PaymentInfoURL;
+
     // 檢查碼
     data.CheckMacValue = opts.hasOwnProperty("CheckMacValue") ? opts.CheckMacValue : this.genCheckMacValue(data, data.EncryptType === 1 ? "sha256" : "md5" );
 
