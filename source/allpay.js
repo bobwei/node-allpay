@@ -1462,6 +1462,18 @@ class Allpay {
     sendRequest("POST", ENDPOINT.queryTradeInfo, data, callback);
   }
 
+  queryTradeOfCreditCard(opts, callback = undefined) {
+    const data = {
+      ...opts,
+      MerchantID: CONFIG.merchantID,
+    };
+
+    sendRequest("POST", '/CreditDetail/QueryTrade/V2', {
+      ...data,
+      CheckMacValue: this.genCheckMacValue(data),
+    }, callback);
+  }
+
   /**
    * 信用卡定期定額訂單查詢
    *
