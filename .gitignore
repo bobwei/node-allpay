@@ -10,5 +10,3 @@ npm-debug.log
 .tmp
 *.swp
 .DS_STORE
-
-lib
