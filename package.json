@@ -1,10 +1,10 @@
 {
   "name": "allpay",
-  "author": "Calvert Yang",
-  "version": "1.1.0",
+  "author": "Bob Wei",
+  "version": "1.2.0",
   "description": "AllPay 全方位金流介接 SDK for Node.js",
   "contributors": [
-    "Calvert Yang"
+    "Bob Wei"
   ],
   "keywords": [
     "allpay"
@@ -23,14 +23,6 @@
     "prepublish": "npm run build",
     "test": "mocha",
     "build": "babel source --out-dir lib"
-  },
-  "homepage": "https://github.com/CalvertYang/node-allpay",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/CalvertYang/node-allpay.git"
-  },
-  "bugs": {
-    "url": "https://github.com/CalvertYang/node-allpay/issues"
   },
   "license": "MIT"
 }
